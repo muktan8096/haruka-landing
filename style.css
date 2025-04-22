@@ -1,0 +1,215 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Nunito', sans-serif;
+    background: #fff0f5;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #171717;
+  }
+  
+  .container {
+    max-width: 960px;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  /* Hero Section */
+  .hero {
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.3)), 
+                url("assets/images/Screenshot 2025-04-22 151635.png") no-repeat center center/cover;
+    text-align: center;
+    padding: 100px 20px;
+    color: #2a2a2a;
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .hero h1, .hero p {
+    text-shadow: 0 2px 5px rgba(255, 255, 255, 0.8);
+  }
+  
+  .btn-primary {
+    background: #57c5e0;
+    padding: 12px 28px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 50px;
+    transition: background 0.3s ease;
+    display: inline-block;
+  }
+  
+  .btn-primary:hover {
+    background: #3aa1c1;
+  }
+  
+  /* Features Section */
+  .features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background: #fff;
+    padding: 40px 20px;
+  }
+  
+  .feature {
+    flex: 1 1 280px;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    text-align: center;
+    color: #fff;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .feature:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .feature::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.3));
+    backdrop-filter: blur(2px);
+    z-index: 0;
+    border-radius: 15px;
+  }
+  
+  .feature h2 {
+    color: #111;
+    font-weight: 800;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .feature p {
+    color: #000;
+    font-weight: 500;
+    position: relative;
+    z-index: 1;
+  }
+  
+  /* Specific backgrounds */
+  .feature:nth-child(1) {
+    background-image: url("assets/images/Screenshot 2025-04-22 152959.png");
+  }
+  
+  .feature:nth-child(2) {
+    background-image: url("assets/images/Screenshot 2025-04-22 153016.png");
+  }
+  
+  .feature:nth-child(3) {
+    background-image: url("assets/images/Screenshot 2025-04-22 153038.png");
+  }
+  
+  /* Testimonials */
+  .testimonials {
+    background: #fdf6f9;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .testimonials h2 {
+    font-size: 1.8rem;
+    color: #d63384;
+    margin-bottom: 20px;
+  }
+  
+  .testimonials blockquote {
+    font-style: italic;
+    color: #555;
+    margin: 15px auto;
+    max-width: 600px;
+  }
+  
+  /* Google Style Reviews */
+  .testimonials-google-grid {
+    padding: 40px 20px;
+    background: #fefefe;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+  }
+  
+  .review-card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .review-header {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid #ddd;
+  }
+  
+  .review-meta {
+    font-size: 0.85rem;
+    color: #777;
+  }
+  
+  .stars {
+    color: #f4b400;
+    font-weight: bold;
+    font-size: 1rem;
+  }
+  
+  .stars .time {
+    font-size: 0.8rem;
+    color: #666;
+  }
+  
+  .review-text {
+    font-size: 0.95rem;
+    color: #333;
+    line-height: 1.5;
+  }
+  
+  
+  
+  
+  
+  /* Footer */
+  footer {
+    background: #b2d8f9;
+    padding: 20px;
+    text-align: center;
+    font-size: 0.9rem;
+  }
+  
+  footer a {
+    color: #090b0b;
+    margin: 0 10px;
+  }
